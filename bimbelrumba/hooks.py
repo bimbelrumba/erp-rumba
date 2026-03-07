@@ -137,13 +137,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
-# }
+	"RUMBA Cabang": {
+        "before_insert": "bimbelrumba.utils.kode_cabang.set_kode_cabang"
+    }
+ }
 
 # Scheduled Tasks
 # ---------------

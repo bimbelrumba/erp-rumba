@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:kode_cabang",
+ "creation": "2026-03-07 10:49:56.422402",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kode_cabang",
+  "nama_kota",
+  "nama_cabang",
+  "telepon_cabang",
+  "email_cabang",
+  "alamat_cabang",
+  "column_break_rogc",
+  "tanggal_pendirian",
+  "koordinator_cabang",
+  "ruang_kelas",
+  "status_cabang"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "kode_cabang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kode Cabang",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "nama_kota",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nama Kota",
+   "options": "RUMBA Kota",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "nama_cabang",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nama Cabang",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "telepon_cabang",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Telepon",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_cabang",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alamat_cabang",
+   "fieldtype": "Small Text",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "column_break_rogc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 5,
+   "fieldname": "tanggal_pendirian",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal Pendirian",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "koordinator_cabang",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Koordinator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "ruang_kelas",
+   "fieldtype": "Select",
+   "label": "Jumlah Ruang Kelas",
+   "length": 7,
+   "options": "2\n3\n4\n5\n6\n7\n8\n9\n10",
+   "reqd": 1
+  },
+  {
+   "columns": 7,
+   "fieldname": "status_cabang",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Rintisan\nAktif\nTutup"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-07 13:44:41.942132",
+ "modified_by": "Administrator",
+ "module": "Bimbel Rumba",
+ "name": "RUMBA Cabang",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
