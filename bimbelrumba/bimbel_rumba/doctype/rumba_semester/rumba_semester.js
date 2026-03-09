@@ -1,0 +1,8 @@
+// Copyright (c) 2026, Rumba Kita Indonesia and contributors
+// For license information, please see license.txt
+
+// frappe.ui.form.on("RUMBA Semester", {
+// 	refresh(frm) {
+
+// 	},
+// });

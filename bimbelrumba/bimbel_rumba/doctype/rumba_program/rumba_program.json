@@ -1,41 +1,41 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:kode_kota",
- "creation": "2026-03-07 08:53:30.704238",
+ "autoname": "field:kode_program",
+ "creation": "2026-03-09 07:25:32.447363",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "kode_kota",
-  "nama_kota"
+  "kode_program",
+  "nama_program"
  ],
  "fields": [
   {
-   "description": "Kode kota diisi 3 huruf kapital, misal: PKP (Pangkalpinang).",
-   "fieldname": "kode_kota",
+   "description": "Tulis kode program dengan huruf kapital. Maksimal 4 huruf. Contoh: KIDD untuk Kiddy Club.",
+   "fieldname": "kode_program",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Kode Kota",
-   "length": 3,
+   "label": "Kode Program",
+   "length": 4,
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "nama_kota",
+   "fieldname": "nama_program",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Nama Kota",
+   "label": "Nama Program",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-09 00:31:34.477756",
+ "modified": "2026-03-09 07:30:15.276913",
  "modified_by": "Administrator",
  "module": "Bimbel Rumba",
- "name": "RUMBA Kota",
- "naming_rule": "Expression",
+ "name": "RUMBA Program",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -56,5 +56,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "nama_kota"
+ "title_field": "nama_program"
 }

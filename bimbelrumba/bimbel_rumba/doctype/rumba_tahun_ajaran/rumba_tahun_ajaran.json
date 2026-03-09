@@ -1,40 +1,41 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:kode_kota",
- "creation": "2026-03-07 08:53:30.704238",
+ "autoname": "field:kode_tahun_ajaran",
+ "creation": "2026-03-09 07:37:29.584848",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "kode_kota",
-  "nama_kota"
+  "kode_tahun_ajaran",
+  "tahun_ajaran"
  ],
  "fields": [
   {
-   "description": "Kode kota diisi 3 huruf kapital, misal: PKP (Pangkalpinang).",
-   "fieldname": "kode_kota",
+   "description": "Isi dengan 4 angka, diambil dari 2 angka terakhir dari setiap tahun dari tahun ajaran.<br>\nContoh: 2627 untuk kode tahun ajaran 2026/2027.",
+   "fieldname": "kode_tahun_ajaran",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Kode Kota",
-   "length": 3,
+   "label": "Kode Tahun Ajaran",
+   "length": 4,
    "reqd": 1,
    "unique": 1
   },
   {
-   "fieldname": "nama_kota",
+   "description": "Gunakan garis miring untuk memisahkan penulisan tahun.<br>\nContoh: 2026/2027.",
+   "fieldname": "tahun_ajaran",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Nama Kota",
+   "label": "Tahun Ajaran",
+   "length": 9,
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-09 00:31:34.477756",
+ "modified": "2026-03-09 07:41:25.977384",
  "modified_by": "Administrator",
  "module": "Bimbel Rumba",
- "name": "RUMBA Kota",
+ "name": "RUMBA Tahun Ajaran",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -56,5 +57,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "nama_kota"
+ "title_field": "tahun_ajaran"
 }
