@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-13 11:32:37.025324",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "data_murid_tab",
+  "data_murid_section",
+  "rujukan_pendaftaran",
+  "nomor_induk_murid",
+  "status_murid",
+  "kota_rumba",
+  "cabang_rumba",
+  "kode_cabang",
+  "column_break_vddj",
+  "nama_lengkap",
+  "nama_panggilan",
+  "email_ortu",
+  "nomor_handphone",
+  "program_belajar_section",
+  "program_belajar",
+  "hari_belajar",
+  "jam_belajar",
+  "column_break_vyhb",
+  "tanggal_pendaftaran",
+  "tanggal_mulai_belajar"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_murid_tab",
+   "fieldtype": "Tab Break",
+   "label": "DATA MURID"
+  },
+  {
+   "fieldname": "data_murid_section",
+   "fieldtype": "Section Break",
+   "label": "DATA MURID"
+  },
+  {
+   "fieldname": "rujukan_pendaftaran",
+   "fieldtype": "Link",
+   "label": "Rujukan Pendaftaran",
+   "options": "RUMBA Pendaftaran",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nomor_induk_murid",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Nomor Induk Murid",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "default": "Aktif",
+   "fieldname": "status_murid",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Status Murid",
+   "options": "Aktif\nSelesai\nKeluar\nAda Kewajiban",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kota_rumba",
+   "fieldtype": "Link",
+   "label": "Kota",
+   "options": "RUMBA Kota"
+  },
+  {
+   "fieldname": "cabang_rumba",
+   "fieldtype": "Link",
+   "label": "Cabang",
+   "options": "RUMBA Cabang"
+  },
+  {
+   "fieldname": "column_break_vddj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "rujukan_pendaftaran.nama_lengkap",
+   "fieldname": "nama_lengkap",
+   "fieldtype": "Data",
+   "label": "Nama Lengkap"
+  },
+  {
+   "fetch_from": "rujukan_pendaftaran.nama_panggilan",
+   "fieldname": "nama_panggilan",
+   "fieldtype": "Data",
+   "label": "Nama Panggilan"
+  },
+  {
+   "fetch_from": "rujukan_pendaftaran.email_ortu",
+   "fieldname": "email_ortu",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "rujukan_pendaftaran.nomor_hape",
+   "fieldname": "nomor_handphone",
+   "fieldtype": "Phone",
+   "label": "Nomor Handphone"
+  },
+  {
+   "fieldname": "program_belajar_section",
+   "fieldtype": "Section Break",
+   "label": "PROGRAM BELAJAR"
+  },
+  {
+   "fieldname": "program_belajar",
+   "fieldtype": "Link",
+   "label": "Program Belajar",
+   "options": "RUMBA Program"
+  },
+  {
+   "fieldname": "hari_belajar",
+   "fieldtype": "Data",
+   "label": "Hari Belajar"
+  },
+  {
+   "fieldname": "jam_belajar",
+   "fieldtype": "Select",
+   "label": "Jam Belajar",
+   "options": "09.30 - 10.45\n11.00 - 12.15\n12.30 - 13.45\n14.00 - 15.15\n15.30 - 16.45\n17.00 - 18.15\n18.45 - 20.00"
+  },
+  {
+   "fieldname": "column_break_vyhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tanggal_pendaftaran",
+   "fieldtype": "Date",
+   "label": "Tanggal Pendaftaran"
+  },
+  {
+   "fieldname": "tanggal_mulai_belajar",
+   "fieldtype": "Date",
+   "label": "Tanggal Mulai Belajar"
+  },
+  {
+   "fetch_from": "cabang_rumba.kode_cabang",
+   "fieldname": "kode_cabang",
+   "fieldtype": "Data",
+   "label": "Kode Cabang"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-13 13:14:56.014527",
+ "modified_by": "Administrator",
+ "module": "Bimbel Rumba",
+ "name": "RUMBA Murid",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

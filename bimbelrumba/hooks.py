@@ -171,6 +171,7 @@ doc_events = {
 
 scheduler_events = {
     "daily": [
+        "app.path.fungsi_lama",
         "bimbelrumba.rumba_program.doctype.rumba_semester.rumba_semester.update_status_rumba_semester_selesai"
     ]
 }
