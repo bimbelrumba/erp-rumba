@@ -7,9 +7,10 @@
  "field_order": [
   "cabang_dan_program_tab",
   "cabang_dan_program_section",
-  "tanggal_daftar",
-  "nama_kota",
+  "tanggal_pendaftaran",
+  "kota_rumba",
   "cabang_rumba",
+  "kode_cabang",
   "column_break_gyvq",
   "program_belajar",
   "hari_belajar",
@@ -88,6 +89,7 @@
   "verifikasi_admin_tab",
   "tanggal_mulai_belajar",
   "nomor_induk_murid",
+  "rumba_murid",
   "column_break_likx",
   "metode_pembayaran",
   "status_bayar",
@@ -98,21 +100,6 @@
    "fieldname": "cabang_dan_program_section",
    "fieldtype": "Section Break",
    "label": "CABANG dan PROGRAM"
-  },
-  {
-   "default": "Today",
-   "fieldname": "tanggal_daftar",
-   "fieldtype": "Date",
-   "label": "Tanggal Pendaftaran",
-   "read_only": 1
-  },
-  {
-   "fieldname": "nama_kota",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Kota",
-   "options": "RUMBA Kota",
-   "reqd": 1
   },
   {
    "fieldname": "cabang_rumba",
@@ -606,12 +593,41 @@
    "label": "Status Pendaftaran",
    "options": "Tunggu\nDiterima\nDitolak",
    "reqd": 1
+  },
+  {
+   "fetch_from": "cabang_rumba.kode_cabang",
+   "fieldname": "kode_cabang",
+   "fieldtype": "Data",
+   "label": "Kode Cabang",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "tanggal_pendaftaran",
+   "fieldtype": "Date",
+   "label": "Tanggal Pendaftaran",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rumba_murid",
+   "fieldtype": "Link",
+   "label": "RUMBA Murid",
+   "options": "RUMBA Murid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kota_rumba",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kota",
+   "options": "RUMBA Kota",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 12:51:04.408761",
+ "modified": "2026-03-16 20:05:45.770105",
  "modified_by": "Administrator",
  "module": "Bimbel Rumba",
  "name": "RUMBA Pendaftaran",

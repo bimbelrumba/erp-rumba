@@ -7,7 +7,7 @@
  "field_order": [
   "data_murid_tab",
   "data_murid_section",
-  "rujukan_pendaftaran",
+  "pendaftaran_rujukan",
   "nomor_induk_murid",
   "status_murid",
   "kota_rumba",
@@ -21,10 +21,19 @@
   "program_belajar_section",
   "program_belajar",
   "hari_belajar",
+  "senin",
+  "selasa",
+  "rabu",
+  "kamis",
+  "jumat",
+  "sabtu",
   "jam_belajar",
   "column_break_vyhb",
   "tanggal_pendaftaran",
-  "tanggal_mulai_belajar"
+  "tanggal_mulai_belajar",
+  "section_break_hkfi",
+  "metode_pembayaran",
+  "status_pembayaran"
  ],
  "fields": [
   {
@@ -36,13 +45,6 @@
    "fieldname": "data_murid_section",
    "fieldtype": "Section Break",
    "label": "DATA MURID"
-  },
-  {
-   "fieldname": "rujukan_pendaftaran",
-   "fieldtype": "Link",
-   "label": "Rujukan Pendaftaran",
-   "options": "RUMBA Pendaftaran",
-   "read_only": 1
   },
   {
    "fieldname": "nomor_induk_murid",
@@ -144,12 +146,71 @@
    "fieldname": "kode_cabang",
    "fieldtype": "Data",
    "label": "Kode Cabang"
+  },
+  {
+   "fieldname": "pendaftaran_rujukan",
+   "fieldtype": "Link",
+   "label": "Pendaftaran Rujukan",
+   "options": "RUMBA Pendaftaran",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_hkfi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "metode_pembayaran",
+   "fieldtype": "Select",
+   "label": "Metode Pembayaran",
+   "options": "Tunai\nTransfer ke BRI\nTransfer ke Mandiri"
+  },
+  {
+   "fieldname": "status_pembayaran",
+   "fieldtype": "Select",
+   "label": "Status Pembayaran",
+   "options": "Lunas\nBelum Lunas"
+  },
+  {
+   "default": "0",
+   "fieldname": "senin",
+   "fieldtype": "Check",
+   "label": "Senin"
+  },
+  {
+   "default": "0",
+   "fieldname": "selasa",
+   "fieldtype": "Check",
+   "label": "Selasa"
+  },
+  {
+   "default": "0",
+   "fieldname": "rabu",
+   "fieldtype": "Check",
+   "label": "Rabu"
+  },
+  {
+   "default": "0",
+   "fieldname": "kamis",
+   "fieldtype": "Check",
+   "label": "Kamis"
+  },
+  {
+   "default": "0",
+   "fieldname": "jumat",
+   "fieldtype": "Check",
+   "label": "Jumat"
+  },
+  {
+   "default": "0",
+   "fieldname": "sabtu",
+   "fieldtype": "Check",
+   "label": "Sabtu"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 13:14:56.014527",
+ "modified": "2026-03-16 20:07:10.557958",
  "modified_by": "Administrator",
  "module": "Bimbel Rumba",
  "name": "RUMBA Murid",
