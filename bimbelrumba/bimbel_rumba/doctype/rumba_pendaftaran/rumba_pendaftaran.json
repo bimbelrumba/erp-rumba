@@ -166,7 +166,8 @@
    "fieldname": "jam_belajar",
    "fieldtype": "Select",
    "label": "Jam Belajar",
-   "options": "09.30 - 10.45\n11.00 - 12.15\n12.30 - 13.45\n14.00 - 15.15\n15.30 - 16.45\n17.00 - 18.15\n18.45 - 20.00"
+   "options": "09.30 - 10.45\n11.00 - 12.15\n12.30 - 13.45\n14.00 - 15.15\n15.30 - 16.45\n17.00 - 18.15\n18.45 - 20.00",
+   "reqd": 1
   },
   {
    "fieldname": "cabang_dan_program_tab",
@@ -555,11 +556,9 @@
    "label": "VERIFIKASI ADMIN"
   },
   {
-   "default": "Today",
    "fieldname": "tanggal_mulai_belajar",
    "fieldtype": "Date",
-   "label": "Tanggal Mulai Belajar",
-   "reqd": 1
+   "label": "Tanggal Mulai Belajar"
   },
   {
    "fieldname": "nomor_induk_murid",
@@ -577,17 +576,16 @@
    "fieldname": "metode_pembayaran",
    "fieldtype": "Select",
    "label": "Metode Pembayaran",
-   "options": "Tunai\nTransfer ke BRI\nTransfer ke Mandiri",
-   "reqd": 1
+   "options": "Tunai\nTransfer ke BRI\nTransfer ke Mandiri"
   },
   {
    "fieldname": "status_bayar",
    "fieldtype": "Select",
    "label": "Status Pembayaran",
-   "options": "Lunas\nBelum Lunas",
-   "reqd": 1
+   "options": "Lunas\nBelum Lunas"
   },
   {
+   "default": "Tunggu",
    "fieldname": "status_pendaftaran",
    "fieldtype": "Select",
    "label": "Status Pendaftaran",
