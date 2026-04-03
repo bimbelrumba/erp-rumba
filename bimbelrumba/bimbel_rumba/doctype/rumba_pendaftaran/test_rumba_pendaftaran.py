@@ -11,19 +11,19 @@ class TestRUMBAPendaftaran(FrappeTestCase):
 		doc = self.make_doc()
 
 		with self.assertRaises(ValidationError):
-			doc.run_method("validate")
+			doc.validate()
 
 	def test_requires_school_details_when_student_already_in_school(self):
 		doc = self.make_doc(senin=1, sudah_sekolah="Sudah")
 
 		with self.assertRaises(ValidationError):
-			doc.run_method("validate")
+			doc.validate()
 
 	def test_requires_special_needs_explanation(self):
 		doc = self.make_doc(senin=1, kebutuhan_khusus="Ya")
 
 		with self.assertRaises(ValidationError):
-			doc.run_method("validate")
+			doc.validate()
 
 	def test_requires_merchandise_size_when_kaos_selected(self):
 		doc = self.make_doc(senin=1, kaos=1)
@@ -59,7 +59,7 @@ class TestRUMBAPendaftaran(FrappeTestCase):
 			status_bayar="Lunas",
 		)
 
-		doc.run_method("validate")
+		doc.validate()
 
 	@staticmethod
 	def make_doc(**overrides):
